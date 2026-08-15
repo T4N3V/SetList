@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SetListTest {
+public class SetList {
 
             static final int N = 60000;
 
