@@ -35,12 +35,24 @@ The workflow in this branch uses Temurin JDK 21. The repository does not otherwi
 
 ## Run locally
 
+### Reviewing the documentation branch
+
+This README accompanies [documentation PR #2](https://github.com/T4N3V/SetList/pull/2),
+which is based on [compilation fix PR #1](https://github.com/T4N3V/SetList/pull/1).
+While those changes are unmerged, use the branch below so the source matches the
+commands in this README:
+
 ```bash
-git clone https://github.com/T4N3V/SetList.git
+git clone --branch codex/document-set-list-comparison https://github.com/T4N3V/SetList.git
 cd SetList
 javac SetList.java
 java SetList
 ```
+
+The current `main` branch declares `public class SetListTest` in `SetList.java`,
+so compiling that checkout as-is fails with a public-class/filename mismatch.
+This documentation does not fix that source code. After PR #1 and this README
+are merged into `main`, a normal clone can use the same compile and run commands.
 
 The exact timings vary between runs and machines.
 
